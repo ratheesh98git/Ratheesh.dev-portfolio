@@ -1,0 +1,57 @@
+.h_gallery_item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.g_img_item img {
+    width: 100%;
+    height: 250px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the div */
+}
+
+.overlay {
+    position: absolute;
+    top: calc(100% - 20px); /* Start 20px from the bottom */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 1; /* Ensure visibility */
+    visibility: visible; /* Ensure visibility */
+    transition: top 0.5s ease; /* Smooth transition for the top property */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.h_gallery_item:hover .overlay {
+    top: 0; /* Move to cover the entire image on hover */
+}
+
+.overlay_text h4 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.overlay_text p {
+    margin-bottom: 10px;
+}
+
+.overlay_text .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.overlay_text .btn:hover {
+    background-color: #0056b3;
+}

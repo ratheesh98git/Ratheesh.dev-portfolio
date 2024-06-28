@@ -1,0 +1,524 @@
+.card {
+    margin: 20px;
+    width: calc(33.33% - 40px); /* Each card takes up roughly 1/3 of the container width */
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #e4134e; /* Fallback dark background */
+    color: #ffffff; /* White text */
+    display: inline-block; /* Display cards in a row */
+    vertical-align: top; /* Align cards to the top */
+    text-align: center; /* Center text inside cards */
+    font-family: Arial, sans-serif; /* Specify font family */
+    text-decoration: none; /* Remove underline from links */
+  }
+
+
+   /* Card content styling */
+   .content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* DevOps card */
+  
+
+  /* Software Development card */
+  .card.software-development::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(45deg, #ffcc00, #ff00cc); /* Striped gradient background */
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  /* Python Developer card */
+  .card.python-developer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #ff4d4d; /* Red background */
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  /* Machine Learning Engineer card */
+  .card.ml-engineer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #4db8ff; /* Blue background */
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  /* Full Stack Developer card */
+  .card.full-stack-developer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #ffa64d; /* Orange background */
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  /* Hover effect to expand and scale card */
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  /* Hover effect to reveal animated background */
+  .card:hover::before {
+    top: 0;
+    left: 0;
+  }
+
+  .data {
+    max-width: 1650px; /* Adjust max-width as per your design */
+    margin: auto; /* Center align the container horizontally */
+    text-align: center; /* Center align the cards within the container */
+  }
+  
+
+  /* Heading and paragraph styles */
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+
+  .card p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Container for the cards */
+  .container {
+    text-align: center; /* Center align the cards within the container */
+  }
+
+  /* Section styling */
+  section {
+    margin-bottom: 40px; /* Space between sections */
+  }
+
+  /* About Me section */
+  #about-me {
+    max-width: 800px; /* Limit width to control text line length */
+    margin: auto; /* Center align the section */
+    text-align: left; /* Left align text within the section */
+  }
+
+  /* Portfolio section */
+  #portfolio {
+    max-width: 800px; /* Limit width to control text line length */
+    margin: auto; /* Center align the section */
+    text-align: left; /* Left align text within the section */
+  }
+
+  /* Portfolio card styling */
+  .portfolio-card {
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffffff; /* White text */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin-bottom: 20px; /* Space between portfolio cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    display: inline-block; /* Display cards in a row */
+    width: calc(50% - 40px); /* Each card takes up roughly half of the container width */
+    vertical-align: top; /* Align cards to the top */
+    text-align: left; /* Left align text within the card */
+    text-decoration: none; /* Remove underline from links */
+  }
+
+  /* Portfolio card hover effect */
+  .portfolio-card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow size on hover */
+  }
+
+  /* Portfolio card title styling */
+  .portfolio-card h3 {
+    font-size: 20px; /* Larger font size */
+    margin-bottom: 10px; /* Space below the title */
+  }
+
+  /* Portfolio card description styling */
+  .portfolio-card p {
+    font-size: 16px; /* Normal font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 10px; /* Space below the paragraph */
+  }
+
+  /* Portfolio card link styling */
+  .portfolio-card .btn {
+    display: inline-block; /* Display as inline block */
+    background-color: #4CAF50; /* Green background color */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  /* Portfolio card link hover effect */
+  .portfolio-card .btn:hover {
+    background-color: #45a049; /* Darker green background on hover */
+  }
+
+  /* Adjusting the color and background color */
+  h2, p {
+    color: #ffffff;
+  }
+
+  
+
+  /* Hover effect for each card type */
+  .card.python-developer:hover::before {
+    background-color: #ff6666; /* Light red */
+  }
+
+  .card.ml-engineer:hover::before {
+    background-color: #80ccff; /* Light blue */
+  }
+
+  .card.full-stack-developer:hover::before {
+    background-color: #ffcc99; /* Light orange */
+  }
+
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  #about-me h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Add padding to create space for the underline */
+}
+
+#about-me h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+#about-me h2:hover::after {
+    width: 0;
+    background-color: #ff6347; /* Change to your desired hover color */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    animation: underline-move 0.5s forwards; /* Apply animation to move the underline */
+}
+
+@keyframes underline-move {
+    0% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+.base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+.card-containerx {
+  display: flex;
+  gap: 20px; /* Adjust the gap between cards */
+  justify-content: center;
+  flex-wrap: wrap; /* Allow cards to wrap if necessary */
+}
+.cardx {
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Adjust the width of each card */
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  color: #ffffff;
+}
+.cardx:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+}
+.cardx h2 {
+  margin: 10px 0;
+  color: #ffffff;
+}
+.cardx p {
+  color: #cccccc;
+  font-size: 14px;
+}
+.cardx .name {
+  font-weight: bold;
+  color: #ffffff;
+}
+.cardx .role {
+  font-weight: bold;
+  color: #e91e63;
+}
+.cardx .skills {
+  list-style: none;
+  padding: 0;
+}
+.cardx .skills li {
+  background-color: #444444;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.cardx {
+  animation: fadeIn 0.5s ease;
+}
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .card-containerx {
+      flex-direction: column;
+      align-items: center;
+  }
+  .cardx {
+      width: 100%;
+      max-width: 300px; /* Adjust maximum width for responsiveness */
+  }
+}
+@media (max-width: 600px) {
+  .card-containerx {
+      flex-direction: column;
+      align-items: center;
+  }
+  .cardx {
+      width: 100%;
+      max-width: 300px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1000; /* Adjust the z-index as needed */
+  }
+
+body{
+background:black;
+}
+
+header{
+background:black;
+
+
+
+}
+
+section{
+background:black;
+
+
+
+
+}
+
+/* Navbar hover effect */
+.navbar-nav .nav-item .nav-link {
+position: relative;
+color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: #69b8bd;
+visibility: hidden;
+transform: scaleX(0);
+transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+visibility: visible;
+transform: scaleX(1);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+color: #69b8bd;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+.home_banner_area .card-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.home_banner_area .card-container .round {
+    height: 10em;
+    width: 10em;
+}
+
+.home_banner_area h3 {
+    font-size: 1.5rem;
+}
+
+.home_banner_area h6 {
+    font-size: 0.875rem;
+}
+
+.home_banner_area p {
+    font-size: 0.875rem;
+}
+
+.home_banner_area .buttons button {
+    padding: 8px 20px;
+    font-size: 0.875rem;
+}
+
+.home_banner_area .skills {
+    font-size: 0.875rem;
+}
+
+.home_banner_area .skills ul li {
+    font-size: 0.875rem;
+}
+
+.personal_text {
+    padding: 15px;
+    margin-left: 0;
+    font-size: 0.875rem;
+}
+
+.personal_text h6 {
+    font-size: 1rem;
+}
+
+.personal_text h3 {
+    font-size: 1.5rem;
+}
+
+.personal_text h4 {
+    font-size: 1.25rem;
+}
+
+.personal_text p {
+    font-size: 0.875rem;
+}
+
+.nav-item {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar-collapse {
+    background-color: black;
+}
+}
+
+
+@media (max-width: 767px) {
+.profile_area {
+    padding: 90px;
+}
+
+.profile_inner {
+    align-items: center;
+}
+
+.cardx {
+    padding: 15px;
+}
+}
+
+@media (max-width: 768px) {
+.about-section .card {
+margin: 0 auto;
+padding: 10px;
+}
+
+.about-section .card-body {
+padding: 15px;
+}
+
+.about-section .card-title,
+.about-section .card-text {
+font-size: 0.9em;
+}
+}
+
+@media (max-width: 576px) {
+.about-section .card {
+margin: 0 10px;
+padding: 5px;
+}
+
+.about-section .card-body {
+padding: 10px;
+}
+
+.about-section .card-title {
+font-size: 0.8em;
+}
+
+.about-section .card-text {
+font-size: 0.8em;
+}
+}
+
+/* Card height adjustment */
+.card-height {
+height: 100%;
+}

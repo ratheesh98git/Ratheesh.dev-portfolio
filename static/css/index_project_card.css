@@ -1,0 +1,42 @@
+.ratheesh {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ratheesh::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, #007bff, #0056b3, #007bff);
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.ratheesh:hover::before {
+    left: 0;
+}
+
+.ratheesh span {
+    position: relative;
+    z-index: 1;
+}
+
+.ratheesh:hover {
+    color: white;
+    text-decoration: none;
+}

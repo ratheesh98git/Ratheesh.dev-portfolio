@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List - Admin Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #343a40; /* Dark background color */
+            color: #fff; /* Light text color */
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            background-color: #fff; /* White table background */
+            color: #343a40; /* Dark text color */
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: center;
+        }
+        table thead {
+            background-color: #343a40; /* Dark header background */
+            color: #fff; /* Light text color */
+        }
+        table tbody tr:hover {
+            background-color: #f8f9fa; /* Light background on hover */
+        }
+        .btn {
+            padding: 5px 10px;
+        }
+        .btn-edit {
+            color: #007bff; /* Blue edit button */
+        }
+        .btn-delete {
+            color: #dc3545; /* Red delete button */
+        }
+        .logout-btn {
+            background-color: #dc3545; /* Red logout button */
+            color: #fff; /* White text */
+            border: none;
+            padding: 5px 10px;
+            margin-top: 20px;
+        }
+        .logout-btn:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Contact List</h1>
+            </div>
+            <div class="col text-right">
+                <a href="/" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+        <table class="table table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact[0] }}</td>
+                    <td>{{ contact[1] }}</td>
+                    <td>{{ contact[2] }}</td>
+                    <td>{{ contact[3] }}</td>
+                    <td>
+                        <form action="{{ url_for('delete_contact', id=contact[0]) }}" method="POST" style="display:inline;">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn btn-sm btn-delete"><i class="fas fa-trash-alt"></i> Delete</button>
+                        </form>
+
+                        <a href="#" class="btn btn-sm btn-edit"><i class="fas fa-edit"></i> Edit</a>
+
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ url_for('logout') }}" class="btn logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
+
+                      

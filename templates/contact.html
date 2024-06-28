@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title> Contact Us Form | Ratheesh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact_us.css') }}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMUubBNEQmS5eyxMZZZW93Df6AxgzD/Jw12pS9A" crossorigin="anonymous">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav>
+          <ul id="nav-ul">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                   <a href="{{ url_for('python_project') }}">Python/ML</a>
+                    <a href="#">Certificates</a>
+                </div>
+            </li>
+            <li><a href="{{ url_for('resume') }}">resume</a></li>
+
+
+            
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Blog</a>
+              <div class="dropdown-content">
+                 <a href="{{ url_for('blog') }}">Tech block</a>
+                 <a href="{{ url_for('single_blog') }}">Blog details</a>
+              </div>
+          </li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+    </div>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Vattavilai,Melangalam</div>
+          <div class="text-two">Kanniyakumari 629702.</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+91 9655845378</div>
+          <div class="text-two">+91 9952270739</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">ratheesh.rit@gmail.com</div>
+          <div class="text-two">ratheeshrrlike@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p style="padding:6px;">If you would like to learn from me about my skills, feel free to reach out. I am always happy to assist you.</p>        
+<!-- contact.html -->
+<form action="/contact" method="POST">
+  <div class="input-box">
+    <input type="text" placeholder="Enter your name" name="name" required>
+  </div>
+  <div class="input-box">
+    <input type="text" placeholder="Enter your email" name="email" required>
+  </div>
+  <div class="input-box message-box">
+    <textarea placeholder="Enter your message" name="message"  required></textarea>
+  </div>
+  <div class="button">
+    <input type="submit" value="Send Now">
+  </div>
+</form>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    
+        </div>
+
+          
+                  <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.w3schools.com/" target="_blank">Ratheesh</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"  style="color:#fff; width:5px; height:5px;"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list" style="color:#fff">
+        <li><a href="https://www.facebook.com/r.ratheesh.92/"  target="_blank"><i class="fab fa-facebook"style="padding:6px;"></i>&nbsp;face book</a></li>
+        <li><a href="https://x.com/RRatheesh01"><i class="fab fa-twitter" style="padding:6px;"></i>&nbsp;twitter</a></li>
+        <li><a href= "https://www.instagram.com/lo_lo_lazzy/"  target="_blank"><i class="fab fa-instagram"  style="padding:6px;"></i>&nbsp;instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/ratheesh-pythondeveloper/"  target="_blank"><i class="fab fa-linkedin" style="padding:6px;"></i>&nbsp;linkedin</a></li>
+    </ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+
+  <script>
+    function toggleMenu() {
+      const navUl = document.getElementById('nav-ul');
+      navUl.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>

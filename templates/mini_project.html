@@ -1,0 +1,390 @@
+{% extends 'index_card_base.html' %}
+<!--================Header Menu Area =================-->
+
+{% block content %}
+
+
+
+<section class="home_gallery_area p_120">
+    <div class="container">
+        <div class="main_title">
+            <h2  style="color:white";>Our Latest Featured Mini python Projects</h2>
+            <p  style="color:white";>Who are in extremely love with eco friendly system.</p>
+        </div>
+        <div class="isotope_fillter">
+            <ul class="gallery_filter list">
+               <li class="active" data-filter="*"><a href="{{ url_for('home') }}" style="color:white";>All</a></li>
+
+                <li data-filter=".brand"><a href="{{ url_for('python_project') }}" style="color:white";>Python</a></li>
+                <li data-filter=".manipul"><a href="{{ url_for('ml_project') }}" style="color:white";>Ml project</a></li>
+                <li data-filter=".creative"><a href="{{ url_for('web_project') }}"  style="color:white";>web project</a></li>
+                <li data-filter=".design"><a href="{{ url_for('mini_project') }}"  style="color:white";>mini project</a></li>
+            </ul>
+        </div>
+    </div>
+  
+
+    <section>
+
+       
+        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Row 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/Telegram _Bot _with _Python.jpg') }}" alt="Project 1">
+                                        
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Telegram Bot with Python</h4> 
+                                                <p>Technology Used: Python, Telegram API</p>
+                                                <p>Description: Develop a Telegram bot using Python for automated messaging and interaction with users.</p>
+                                                <a href="https://github.com/ratheesh98git/telegram_bot"  
+        
+                                                class="btn btn-primary"  target="_blank">View on GitHub</a>
+        
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/age_face_detiction.jpg') }}" alt="Project 2">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Age Face Deduction</h4>
+                                                <p>Technology Used: Python, OpenCV</p>
+                                                <p>Description: Develop an application using Python and OpenCV for predicting age based on facial features.</p>
+                                                <a href="https://github.com/ratheesh98git/Age-and-Gender-Detection-with-OpenCV"  class="btn btn-primary" target="_blank">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item"> 
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/audio_processing.jpg') }}" alt="Project 3">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Audio Processing Application</h4>
+                                                <p>Technology Used: Python, Librosa, PyDub</p>
+                                                <p>Description: Developed an audio processing application using Python libraries for analyzing and manipulating audio files.</p>
+                                                <a href="https://github.com/ratheesh98git/audio_processing_loading-and-playing"  class="btn btn-primary" target="_blank">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6"> 
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/create_audio_book.jpg') }}" alt="Project 4">
+                                        <div class="overlay">
+                                           
+                                            <div class="overlay_text">
+                                                <h4>Audiobook Creation</h4>
+                                                <p>Technology Used: Python, SpeechRecognition, PyDub</p>
+                                                <p>Description: Developed a Python application to create audiobooks from text files, utilizing SpeechRecognition for text-to-speech conversion and PyDub for audio manipulation.</p>
+                                                <a href="https://github.com/ratheesh98git/creating_audio_book_using_python"  class="btn btn-primary"  target="_blank">View on GitHub</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">    
+                                    <div class="g_img_item"> 
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/Extract Text _From _Videos _using _Python.jpg') }}" alt="Project 5">
+                                        <div class="overlay">
+        
+                                            <div class="overlay_text">
+                                                <h4>Extract Text From Videos using Python</h4>
+                                                <p>Technology Used: Python, OpenCV, Tesseract OCR</p>
+                                                <p>Description: Developed a Python script to extract text from videos using OpenCV for video processing and Tesseract OCR for optical character recognition.</p>
+                                                <a href="https://github.com/ratheesh98git/Extract_text_from_the-video-using-python-feautures"  class="btn btn-primary" target="_blank" >View on GitHub</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item"> 
+                                    <div class="g_img_item">  
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/scraping _Instagram _with _Python..jpg') }}" alt="Project 6">
+                                        <div class="overlay">
+        
+                                          <div class="overlay_text">
+                                           <h4>Scraping Instagram with Python</h4>
+                                            <p>Technology Used: Python, Requests</p>
+                                       <p>Description: Implemented a Python script to scrape data from Instagram using BeautifulSoup for parsing HTML and Requests for making HTTP requests.</p>
+                                    <a href="https://github.com/ratheesh98git/Explore-Instagram-Profiles-with-Python-"  class="btn btn-primary" target="_blank">View on GitHub</a>
+                                         </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 3 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">  
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/Verification _using _Python.jpeg') }}" alt="Project 7">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Verification Using Python</h4>
+                                                <p>Technology Used: Python</p>
+                                                <p>Description: Developed a Python script for performing verification tasks, ensuring data integrity and accuracy.</p>
+                                                <a href="https://github.com/ratheesh98git/-Secure-OTP-Verification-with-Email-"  class="btn btn-primary" target="_blank" >View on GitHub</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">  
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/digital_lock.jpg') }}" alt="Project 8">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Digital Clock</h4>
+                                                <p>Technology Used: Python, Tkinter</p>
+                                                <p>Description: A simple digital clock application created using Python and Tkinter. The clock displays the current time and updates every second.</p>
+                                                <a href="https://github.com/ratheesh98git/digital-clock-with-python"  class="btn btn-primary" target="_blank" >View on GitHub</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/ai_bot.jpeg') }}" alt="Project 9">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>AI-Powered Chatbot</h4>
+                                                <p>Technology Used: Python, Flask, TensorFlow</p>
+                                                <p>Description: An intelligent chatbot that can understand and respond to user inputs using natural language processing.</p>
+                                                <a href="https://github.com/ratheesh98git/AI-Chat-Bot-in-Python-"  class="btn btn-primary" target="_blank" >View on GitHub</a>
+                                            </div>
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <section>
+        
+        
+               
+        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Row 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/automated_trading_bot.jpeg') }}" alt="Project 1">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Automated Stock Trading System</h4>
+                                                <p>Technology Used: Python, Flask, Pandas, scikit-learn</p>
+                                                <p>Description: A system that uses machine learning algorithms to automate stock trading decisions based on historical data and market trends.</p>
+                                                <a href="https://github.com/ratheesh98git/Automated-Stock-Trading-Bot-with-flask"  class="btn btn-primary"  target="_blank">View on GitHub</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/blog_chain.jpeg') }}" alt="Project 2">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Blockchain-Based Voting System</h4>
+                                                <p>Technology Used: Python, Flask, Ethereum, Solidity</p>
+                                                <p>Description: A secure and transparent voting system that leverages blockchain technology to ensure tamper-proof election results.</p>
+                                                <a href="https://github.com/ratheesh98git/Blockchain-Based-Election-Voting-System-with-flask"  class="btn btn-primary" target="_blank" >View on GitHub</a>
+                                            </div>
+                                            
+        
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/real_chatbot_socket.jpeg') }}" alt="Project 3">
+                                        <div class="overlay">
+                                            
+                                            
+                                            <div class="overlay_text">
+        
+        
+                                                <h4>Real-Time Chat Application with WebSockets</h4>
+                                                <p>Technology Used: Python, Flask, Flask-SocketIO, SQLite</p>
+                                                <p>Description: A real-time chat application that uses WebSockets to enable instant messaging between users in various chat rooms.</p>
+                                                <a href="https://github.com/ratheesh98git/-Real-Time-Chat-Application-with-WebSockets-"  class="btn btn-primary" target="_blank" >View on GitHub</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/project/sending_email.jpg') }}" alt="Project 5">
+                                        <div class="overlay">
+                                            <div class="overlay">
+                                                <div class="overlay_text">
+                                                    <h4>📧 Automated Email Sender with CSV and Attachments 📝</h4>
+                                                    <p>Technology Used: Python, SMTP, CSV</p>
+                                                    <p>Description: Effortlessly send personalized emails with attachments using CSV data and templates. Perfect for newsletters, reports, and more!</p>
+                                                    <a href="https://github.com/ratheesh98git/-Automated-Email-Sender-with-CSV-and-Attachments-" class="btn btn-primary" target="_blank" >View on GitHub</a>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                 <!---    <img class="img-fluid" src="{{ url_for('static', filename='img/gallery/project-6.jpg') }}" alt="Project 6">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Graphic Design</h4>
+                                                <p>Technology Used: Photoshop, Illustrator</p>
+                                                <p>Description: Creative graphic design for various media.</p>
+                                                <a href="https://github.com/ratheesh98git/login_security_page_flask" class="btn btn-primary">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 3 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/gallery/project-3.jpg') }}" alt="Project 7">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>📧 Automated Email Sender with CSV and Attachments 📝</h4>
+                                                <p>Technology Used: Python, SMTP, CSV</p>
+                                                <p>Description: Effortlessly send personalized emails with attachments using CSV data and templates. Perfect for newsletters, reports, and more!</p>
+                                                <a href="https://github.com/ratheesh98git/login_security_page_flask" class="btn btn-primary">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/gallery/project-3.jpg') }}" alt="Project 8">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Product Design</h4>
+                                                <p>Technology Used: SolidWorks, KeyShot</p>
+                                                <p>Description: Innovative product design for manufacturing.</p>
+                                                <a href="https://github.com/ratheesh98git/login_security_page_flask" class="btn btn-primary">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="h_gallery_item">
+                                    <div class="g_img_item">
+                                        <img class="img-fluid" src="{{ url_for('static', filename='img/gallery/project-3.jpg') }}" alt="Project 9">
+                                        <div class="overlay">
+                                            <div class="overlay_text">
+                                                <h4>Animation Design</h4>
+                                                <p>Technology Used: After Effects, Blender</p>
+                                                <p>Description: 2D and 3D animation design for various projects.</p>
+                                                <a href="https://github.com/ratheesh98git/login_security_page_flask" class="btn btn-primary">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- Carousel controls -->
+            <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </section>
+        
+
+{% endblock%}

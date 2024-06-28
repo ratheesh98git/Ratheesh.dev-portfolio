@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='vendors/linericon/style.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='vendors/lightbox/simpleLightbox.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='vendors/nice-select/css/nice-select.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='vendors/animate-css/animate.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='vendors/popup/magnific-popup.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='vendors/flaticon/flaticon.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/index_project_card.css') }}">
+
+		<!-- main css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-L1UULIw5GTGnM2OqDURf4rDTMDu6uQ1VO1SGExTp4PcM8K5yG+AB2eZLu6kW9X03RpZ6D2l5Zrl+MtKgHdFh8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJHrNSfyhXSUBKqz7FaOqrPezt6Fj8xdw"></script>
+    
+    <style>
+
+
+    /* General styles */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    /* Navbar styles */
+    .navbar {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links a i {
+        margin-right: 5px;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
+
+    /* Certificate section styles */
+    .certificate-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #000;
+        padding: 20px;
+    }
+
+    .certificate-card {
+        background-color: #333;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+        text-align: center;
+        color: white;
+        position: relative;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .certificate-logo {
+        width: 80px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .certificate-img {
+        width: 100%;
+        height: 800px;
+        max-height: 200px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 2px solid #555;
+    }
+
+    .certificate-card h1 {
+        font-size: 26px;
+        margin: 30px 0 20px;
+    }
+
+    .certificate-card h2 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .certificate-card h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .certificate-card p {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .signature {
+        margin-top: 30px;
+    }
+
+    .signature hr {
+        border: 0;
+        border-top: 1px solid #fff;
+        margin: 10px 0;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+        .nav-container {
+            flex-direction: column;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-links a {
+            margin: 5px 0;
+        }
+
+        .certificate-card {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .certificate-logo {
+            width: 60px;
+            top: 10px;
+        }
+
+        .certificate-card h1 {
+            margin-top: 50px;
+        }
+    }
+    </style>
+</head>
+<body>
+     <!--================Header Menu Area =================-->
+     <header class="header_area" id="header">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container box_1620">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a class="navbar-brand logo_h" href="      https://www.linkedin.com/in/ratheesh-pythondeveloper/" style="margin-left: 0px; margin-top: 5px;">
+        <!--	<img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" style="width: 8em; height: 3em; color:white;">-->
+       <h1 style="color:white; font-size:20px;"> Ratheesh </h1>
+      
+      </a> 
+                  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+        <ul class="nav navbar-nav menu_nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li> 
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About me</a></li> 
+          <li class="nav-item submenu dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link" href="{{ url_for('python_project') }}">Python Project/Ml</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url_for('elements') }}">certification</a></li>
+            </ul>
+                              </li> 
+
+
+
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('resume') }}">resume</a></li> 
+
+          <li class="nav-item submenu dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link" href="{{ url_for('blog') }}">Tech blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ url_for('single_blog') }}">Blog Details</a></li>
+            </ul>
+          </li> 
+
+
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+      </div>			
+  </header>
+ 
+
+
+  <div  Style="background:black">
+ <BR/>
+
+
+ <BR/>
+
+ <BR/>
+
+  </div>
+    <div class="certificate-section">
+        <div class="certificate-card">
+            <img src="{{ url_for('static', filename='img/certificate/m-squaded.jpg') }}" alt="Certificate Image" class="certificate-img">
+            <h1><i class="fas fa-award"></i> Certificate of Achievement</h1>
+            <p><i class="fas fa-user"></i> This is to certify that</p>
+            <h2><i class="fas fa-user-graduate"></i> Mr. R Ratheesh</h2>
+            <p><i class="fas fa-id-card"></i> (Student ID: MSTC/2023/ONL/42) AADHAR No: 9118 0993 ****</p>
+            <p>residing at, 7-27b, Vattavilai, Melangalam, VTC, Vilavancode P.O, Pudukadai, Kanniyakumari-629171,</p>
+            <p>had undergone 8 months' internship in Artificial Intelligence with us, during the period of 05th July 2023 to 31 May 2024, including a Live project for the last 3 months.</p>
+            <p>He had completed his live project successfully. The live project was named "Stock Trading Bot in AI" and he submitted the source code and other particulars regarding the live project which was implemented successfully.</p>
+            <p>For M Squared Training Center</p>
+            <div class="signature">
+                <p><i class="fas fa-signature"></i> Signature</p>
+                <hr>
+                <p>Binu MP</p>
+                <p>General Manager-HR</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer_area p_120">
+      <div class="container">
+        <div class="row footer_inner">
+          <div class="col-lg-5 col-sm-6">
+            <aside class="f_widget ab_widget">
+              <div class="f_title">
+                <h3>About Me</h3>
+              </div>
+              <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &reg; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.w3schools.com/python/default.asp" target="_blank">Ratheesh</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </aside>
+          </div>
+          <div class="col-lg-5 col-sm-6">
+            <aside class="f_widget news_widget">
+              <div class="f_title">
+                <h3>Newsletter</h3>
+              </div>
+              <p>Stay updated with our latest trends</p>
+              <div id="mc_embed_signup">
+                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                              <div class="input-group d-flex flex-row">
+                                    <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                    <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                </div>				
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
+            </aside>
+          </div>
+          <div class="col-lg-2">
+            <aside class="f_widget social_widget">
+              <div class="f_title">
+                <h3>Follow Me</h3>
+              </div>
+              <p>Let us be social</p>
+              <ul class="list">
+                <li><a href="https://www.facebook.com/r.ratheesh.92/"  target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://x.com/RRatheesh01"><i class="fa fa-twitter"  target="_blank"></i></a></li>
+                <li><a href="mailto:ratheesh.rit@gmail.com" target="_blank"><i class="fa fa-google"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ratheesh-pythondeveloper/"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--================End Footer Area =================-->
+    
+    
+</body>
+</html>

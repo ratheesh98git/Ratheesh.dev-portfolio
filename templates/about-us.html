@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/png">
+        <title>MeetMe Personal</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		
+	
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/index_project_card.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-MKxOCL0oIx/1R/23k2T6F3vU9i3r6VFTe5vAV4S0eG5PpyX9Bsp56yOm64uwFHHKfX2RBbXgS6BO+m3xclal2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-L1UULIw5GTGnM2OqDURf4rDTMDu6uQ1VO1SGExTp4PcM8K5yG+AB2eZLu6kW9X03RpZ6D2l5Zrl+MtKgHdFh8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/about_us.css') }}">
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+		
+
+	
+	
+	
+	</head>
+	<body  style="background-color:black;">
+
+
+
+		<header class="header_area" id="header">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html" style="margin-left: 0px; margin-top: 5px;">
+					 <h2>Ratheesh</h2>
+						</a> 
+	
+												</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About me</a></li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">project</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="{{ url_for('python_project') }}">Python/ml</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ url_for('elements') }}">certificate</a></li>
+									</ul>
+								</li> 
+
+								<li class="nav-item"><a class="nav-link" href="{{ url_for('resume') }}">resume</a></li> 
+
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="{{ url_for('blog') }}">Blog</a></li>
+										<li class="nav-item"><a class="nav-link" href="{{ url_for('single_blog') }}">Blog Details</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+							</ul>
+						</div>			
+        </header>
+		   
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area"  >
+            <div class="box_1620"  style="background:black">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container"  id="arun">
+
+						<section class="home_banner_area" id="unique" style="background:black">
+							<div class="container box_1620"  style="background:black">
+								<div class="banner_inner d-flex align-items-center"  style="background:black">
+									<div class="banner_content" style="background:black">
+										<div class="media">
+											<div class="card-container" style="background:black">
+												<span class="pro">python</span>
+												<img class="round" src="{{ url_for('static', filename='img/profile-removebg-preview (1).png') }}" alt="user">
+												<h3>Ratheesh</h3>
+												<h6>Kanniyakumari</h6>
+												<p>Python Developer<br/>Machine Learning Engineer</p>
+												
+							<div class="container mt-5">
+					<div class="buttons">
+						<button class="primary">Message</button>
+						<a href="{{ url_for('download_resume') }}" class="download-button">
+							<i ></i> Download 
+						</a>
+						</form>
+					</div>
+				</div>
+							<div class="skills">
+								
+								
+								<h6>Skills</h6>
+								<ul>
+				
+							<ul class="icon-list">
+					<li><i></i> python</li>
+					<li><i></i> pandas</li>
+					<li><i></i> numpy</li>
+					<li><i ></i> scikit-learn</li>
+					<li><i ></i> mysql</li>
+					<li><i ></i> Html</li>
+					<li><i ></i> css</li>
+					<li><i ></i> git hub</li>
+														</ul>
+														
+													</ul>
+													
+													
+												</div>
+											</div>
+											<div class="media-body">
+												<div class="personal_text">
+													<h6>Hello Everybody, I am</h6><br/>
+													<h3>R.Ratheesh</h3>
+													<h4>Junior python Developer</h4>
+													<p>As a Python developer, I specialize in leveraging the language's robust capabilities to create efficient and scalable solutions. My expertise lies in crafting software that optimizes performance and user experience, drawing inspiration from the Dickens Pattern, where insightful comparisons reveal diverse potential outcomes, much like Scrooge's transformative journey</p>
+													<ul class="list basic_info">
+														<li><a href="#"><i class="lnr lnr-calendar-full"></i> 4st April,2001</a></li>
+														<li><a href="#"><i class="lnr lnr-phone-handset"></i> 9655845378</a></li>
+														<li><a href="#"><i class="lnr lnr-envelope"></i> ratheesh.rit@gmail.com</a></li>
+														<li><a href="#"><i class="lnr lnr-home"></i> Marthandam ,Kanniyakumari</a></li>
+													</ul>
+													
+													
+													<ul class="list personal_social">						
+																&nbsp;&nbsp;
+																&nbsp;&nbsp;
+														<li><a href="https://www.facebook.com/r.ratheesh.92/"  target="_blank"><i class="fa fa-facebook"></i></a></li>												&nbsp;&nbsp;
+														&nbsp;&nbsp;
+				
+														<li><a href="mailto:ratheesh.rit@gmail.com" target="_blank"><i class="fa fa-google"></i></a> </li>												&nbsp;&nbsp;
+				
+														<li><a href="https://www.linkedin.com/in/ratheesh-pythondeveloper/"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+
+						
+						<div class="banner_content text-center">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        
+        <!--================Home Banner Area =================-->
+
+        <section class="profile_area"  >
+				<div class="profile_inner p_120">
+					<div class="row">
+						<div class="col-lg-5">
+
+								<img class="hat-fluid" src="img/personal-2.jpg" alt="">
+
+													
+								
+								<div class="base" style="margin-left:35em;  max-width:100%;">
+								<div class="card-containerx" style="max-width:100%;">
+									<!-- About Me Card -->
+									<div class="cardx" style="width:700px; height:100% over-flow:hidden;">
+	
+										
+										<h2 class="name">Ratheesh</h2>
+										<p class="role">Python Developer</p>
+										<p>I excel in using Python for automation, leveraging Pandas, NumPy, and Scikit-learn for data manipulation and machine learning tasks. Proficient in managing MySQL databases and version control with GitHub, I streamline development workflows to enhance code deployment efficiency</p>
+
+										
+										<p>I specialize in python software development, focusing on automating infrastructure, refining deployment processes, and ensuring system reliability. My expertise lies in machine learning with Python, leveraging tools like Pandas, NumPy, and Scikit-learn for data manipulation and modeling tasks.</p>										
+
+										<p>With a Bachelor's degree in Electronics and Communication engineer and a strong GPA, I am committed to continuous learning and professional growth. I am seeking opportunities to leverage my skills and contribute to the success of python, machine learning and databases engineering projects.</p>
+
+									</div>
+									<!-- Skill Set Card -->
+									<div class="cardx" style="width:700px; height:100%  padding-top:30px">
+										<h2>Skill Set</h2>
+										<ul class="skills">
+											<li>Python</li>
+
+											<li>Pandas</li>
+											<li>NumPy</li>
+											<li>Scikit-learn</li>
+											<li>MySQL</li>
+											<li>git hub</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
+		
+		
+		
+		<!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+       
+
+
+		 
+		<section id="what-im-doing">
+          <h1  style="text-align:center;color:white;"> What I'm Doing
+		</h1>			
+	
+	<section class="data">
+		  
+			<!-- Software Development Card -->
+			<div class="card software-development">
+				<div class="content">
+					<h2>Software Development</h2>
+					<p>Continuously learning software development</p>
+				</div>
+			</div>
+	
+			<!-- Python Developer Card -->
+			<div class="card python-developer">
+				<div class="content">
+					<h2>Python Developer</h2>
+					<p>Building robust Python applications, integrating APIs</p>
+				</div>
+			</div>
+	
+			<!-- Machine Learning Engineer Card -->
+			<div class="card ml-engineer">
+				<div class="content">
+					<h2>Machine Learning Engineer</h2>
+					<p>Developing and deploying ML models, optimizing algorithms</p>
+				</div>
+			</div>
+	
+			<!-- Full Stack Developer Card -->
+			<div class="card full-stack-developer">
+				<div class="content">
+					<h2>Full Stack Developer</h2>
+					<p>Building end-to-end web applications, using Python frameworks</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	     <!--================End Testimonials Area =================-->
+		 <hr class="styled-hr"  style="color:yellow;">
+
+		 <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>About Me</h3>
+        					</div>
+        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &reg; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.w3schools.com/python/default.asp" target="_blank">R.Ratheesh</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Newsletter</h3>
+        					</div>
+        					<p>Stay updated with our latest trends</p>
+        					<div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                	<div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                                    </div>				
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+        				</aside>
+        			</div>
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Follow Me</h3>
+        					</div>
+        					<p>Let us be social</p>
+        					<ul class="list">
+        						<li><a href="https://www.facebook.com/r.ratheesh.92/"  target="_blank"><i class="fa fa-facebook"></i></a></li>
+        						<li><a href="https://x.com/RRatheesh01"><i class="fa fa-twitter"  target="_blank"></i></a></li>
+        						<li><a href="mailto:ratheesh.rit@gmail.com" target="_blank"><i class="fa fa-google"></i></a></li>
+        						<li><a href="https://www.linkedin.com/in/ratheesh-pythondeveloper/"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-F/V9/aZ8in0ke4o4T60TZ0iRkiOGFFpYFuxUcJ1xReKcDqbfLLTrqFEDQUFaz3YddQ4/2AP5dJ2ZD9ot1mgAxA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  });
+
+
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

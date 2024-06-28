@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ratheesh python developer Resume</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="#">R. Ratheesh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto custom-nav">
+                <li class="nav-item active mr-3">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link"  href="{{ url_for('about') }}">About</a>
+                </li>
+
+
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"  href="{{ url_for('python_project') }}">Python/Ml</a>
+                        <a class="dropdown-item" href="#certifications">Certifications</a>
+                    </div>
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="{{ url_for('resume') }}">Resume</a>
+                </li>
+                
+
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog 
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"  href="{{ url_for('blog') }}">Tech Blog</a>
+                        <a class="dropdown-item"  href="{{ url_for('single_blog') }}">Blog details</a>
+                    </div>
+                </li>
+             
+                <li class="nav-item mr-3">
+                    <a class="nav-link"  href="{{ url_for('contact') }}">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container" id="resume-content">
+        <div class="header text-center">
+            <h1>R. Ratheesh</h1>
+            <p>Python Developer / AI</p>
+            <p class="contact-info">
+                <a href="tel:+9655845378"  style="color:white; text-align:center; padding-left:20px;">9655845378</a> | 
+                <a href="mailto:ratheesh.rit@gmail.com"  style="color:white;" >ratheesh.rit@gmail.com</a>
+            </p>
+            <p class="contact-info">
+                <a href="https://github.com/ratheesh98git" style="color:white;" target="_blank">ratheesh98git</a> | 
+                <a href="https://www.linkedin.com/in/ratheesh-pythondeveloper"  style="color:white;" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+
+        <div class="section" id="profile-summary">
+            <div class="section-header">
+                <h3>Profile Summary</h3>
+            </div>
+            <p>Motivated and dedicated Python developer with a strong foundation in programming principles. Skilled in Python, Numpy, Pandas, and SQL, and passionate about creating efficient, reliable, and flexible applications. My strong problem-solving and teamwork abilities make me eager to contribute to software development projects.</p>
+        </div>
+
+        <div class="section" id="skills">
+            <div class="section-header">
+                <h3>Skills</h3>
+            </div>
+            <ul class="skills">
+                <li>Python programming</li>
+                <li>OOP Concepts</li>
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>MySQL</li>
+                <li>Scikit-Learn</li>
+                <li>Version Control System (Git)</li>
+                <li>Django</li>
+                <li>IDEs (VS Code)</li>
+            </ul>
+        </div>
+
+        <div class="section" id="experience">
+            <div class="section-header">
+                <h3>Experience</h3>
+            </div>
+            <h5>Process Associate</h5>
+            <p>Vision Group Retail Private Ltd, Nagercoil, India (2022-07 - Current)</p>
+            <ul>
+                <li>Involved in IR Model process management on a regular cycle.</li>
+                <li>Responsible for maintaining the IR AI models of United States Region Clients.</li>
+                <li>Responsible for new product additions, category training, development, and corrections.</li>
+                <li>Monitor the performance of AI Models.</li>
+                <li>Collaborate with Master Data for daily updates and cleanups, using Power BI for descriptive analysis to enhance IR AI models.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="education">
+            <div class="section-header">
+            <h3>Education</h3>
+            </div>
+            <p>BE - Electronic & Communication (2018-2022)</p>
+        </div>
+
+        <div class="section" id="internship">
+            <div class="section-header">
+                <h3>Internship</h3>
+            </div>
+            <h5>M Squared Software & Services (P) Ltd.</h5>
+            <p>Duration: 8 Months</p>
+            <ul>
+                <li>Applied strong proficiency in Python, utilizing libraries like NumPy and Pandas to analyze and visualize data, gaining valuable experience in data manipulation and interpretation.</li>
+                <li>Assisted the data analysis team in extracting insights and generating reports to support decision-making processes.</li>
+                <li>Actively participated in team meetings and contributed to the data analysis workflow, demonstrating a keen interest in developing and honing analytical skills.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="projects">
+            <div class="section-header">
+                <h3>Projects</h3>
+            </div>
+            <h5>Data Analysis and Visualization Application</h5>
+            <p>Technologies: Python, NumPy, Pandas, Matplotlib, SQL</p>
+            <ul>
+                <li>Developed a data analysis and visualization application using Python, leveraging the power of NumPy and Pandas for efficient data manipulation and analysis.</li>
+                <li>Utilized Matplotlib for creating informative and visually appealing charts and graphs to present data-driven insights.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="certifications">
+            <div class="section-header">
+                <h3>Certifications</h3>
+            </div>
+            <ul class="certifications">
+                <li>Python for Data Science - Coursera</li>
+            </ul>
+        </div>
+
+        <div class="section" id="additional-skills">
+            <div class="section-header">
+                <h3>Additional Skills</h3>
+            </div>
+            <ul class="additional-skills">
+                <li>Strong problem-solving and analytical skills</li>
+                <li>Excellent verbal and written communication abilities</li>
+                <li>Self-motivated and eager to learn new technologies</li>
+            </ul>
+        </div>
+
+              <div class="buttons">
+            <a href="{{ url_for('download_resume') }}" class="btn-custom">Download as PDF</a>
+        </div>
+    </div>
+
+
+    <div>
+  <br/>
+
+  <br/>
+
+
+
+
+  
+  
+
+    </div>
+
+    <footer class="footer_area p_120"  style="width:100%">
+		<div class="container">
+			<div class="row footer_inner">
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget ab_widget">
+						<div class="f_title">
+							<h3>About Me</h3>
+						</div>
+                        <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.w3schools.com/" target="_blank">Ratheesh</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				</div>
+				<div class="col-lg-5 col-sm-6">
+					<aside class="f_widget news_widget">
+						<div class="f_title">
+							<h3>Newsletter</h3>
+						</div>
+						<p>Stay updated with our latest trends</p>
+						<div id="mc_embed_signup">
+							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+								<div class="input-group d-flex flex-row">
+									<input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+									<button class="btn sub-btn"  style="color:#fff; width:5px; height:5px;"><span class="lnr lnr-arrow-right"></span></button>		
+								</div>				
+								<div class="mt-10 info"></div>
+							</form>
+						</div>
+					</aside>
+				</div>
+				<div class="col-lg-2">
+					<aside class="f_widget social_widget">
+						<div class="f_title">
+							<h3>Follow Me</h3>
+						</div>
+						<p>Let us be social</p>
+
+                        
+						<ul class="list" style="color:#f8f9fa">
+                            <li>
+                                <a href="https://www.facebook.com/r.ratheesh.92/" target="_blank" style="color:#f8f9fa;">
+                                    <i class="fa fa-facebook"></i>facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/RRatheesh01" target="_blank" style="color:#f8f9fa;">
+                                    <i class="fa fa-twitter"></i>twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/ratheesh98git" target="_blank" style="color:#f8f9fa;">
+                                    <i class="fa fa-github"></i>github
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ratheesh-pythondeveloper/" target="_blank" style="color:#f8f9fa;">
+                                    <i class="fa fa-linkedin"></i>LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                        
+					</aside>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+	
+	
+
+<script>
+	function toggleMenu() {
+		const navUl = document.getElementById('nav-ul');
+		navUl.classList.toggle('show');
+	}
+</script>
+</body>
+</html>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Animate the container on load
+            $('.container').addClass('visible');
+
+            // Animate list items and section headers on scroll
+            $(window).on('scroll', function() {
+                $('.skills li, .certifications li, .additional-skills li, .section-header h3').each(function() {
+                    var position = $(this).offset().top;
+                    var topOfWindow = $(window).scrollTop();
+                    if (position < topOfWindow + $(window).height() - 100) {
+                        $(this).addClass('visible');
+                    }
+                });
+            });
+
+            // Trigger scroll to show items on load
+            $(window).trigger('scroll');
+        });
+
+        // Function to download the resume as a PDF
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF('p', 'pt', 'a4');
+
+            const content = document.getElementById('resume-content');
+            const options = {
+                margin: [10, 10, 10, 10],
+                filename: 'R_Ratheesh_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
+            };
+
+            await doc.html(content, {
+                callback: function (doc) {
+                    doc.save('R_Ratheesh_Resume.pdf');
+                },
+                x: 10,
+                y: 10,
+                html2canvas: {
+                    scale: 0.5,
+                    width: 600,
+                    windowWidth: content.scrollWidth
+                },
+                margin: [10, 10, 10, 10],
+            });
+        }
+    </script>
+</body>
+</html>

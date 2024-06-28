@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+<!--================Header Menu Area =================-->
+
+{% block content %}
+
+
+
+<div class="container">
+    <h1>Admin Panel</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for submission in submissions %}
+            <tr>
+                <td>{{ submission.name }}</td>
+                <td>{{ submission.email }}</td>
+                <td>{{ submission.subject }}</td>
+                <td>{{ submission.message }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

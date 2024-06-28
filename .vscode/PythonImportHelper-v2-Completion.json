@@ -1,0 +1,273 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home():\n    return render_template('index.html')\n@app.route('/single')\ndef single():\n    return render_template('single-post.html')\n@app.route('/about-us')\ndef about():\n    return render_template('about-us.html')\n@app.route('/services')\ndef services():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "single",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def single():\n    return render_template('single-post.html')\n@app.route('/about-us')\ndef about():\n    return render_template('about-us.html')\n@app.route('/services')\ndef services():\n    return render_template('base.html')\n@app.route('/portfolio')\ndef portfolio():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def about():\n    return render_template('about-us.html')\n@app.route('/services')\ndef services():\n    return render_template('base.html')\n@app.route('/portfolio')\ndef portfolio():\n    return render_template('portfolio.html')\n@app.route('/certificate')\ndef elements():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "services",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def services():\n    return render_template('base.html')\n@app.route('/portfolio')\ndef portfolio():\n    return render_template('portfolio.html')\n@app.route('/certificate')\ndef elements():\n    return render_template('elements.html')\n@app.route('/blog')\ndef blog():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "portfolio",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def portfolio():\n    return render_template('portfolio.html')\n@app.route('/certificate')\ndef elements():\n    return render_template('elements.html')\n@app.route('/blog')\ndef blog():\n    return render_template('blog.html')\n@app.route('/test')\ndef test():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "elements",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def elements():\n    return render_template('elements.html')\n@app.route('/blog')\ndef blog():\n    return render_template('blog.html')\n@app.route('/test')\ndef test():\n    return render_template('test.html')\n@app.route('/singledetails')\ndef single_blog():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "blog",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def blog():\n    return render_template('blog.html')\n@app.route('/test')\ndef test():\n    return render_template('test.html')\n@app.route('/singledetails')\ndef single_blog():\n    return render_template('single-blog.html')\n@app.route('/contact', methods=['GET', 'POST'])\ndef contact():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def test():\n    return render_template('test.html')\n@app.route('/singledetails')\ndef single_blog():\n    return render_template('single-blog.html')\n@app.route('/contact', methods=['GET', 'POST'])\ndef contact():\n    if request.method == 'POST':\n        name = request.form['name']\n        email = request.form['email']",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "single_blog",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def single_blog():\n    return render_template('single-blog.html')\n@app.route('/contact', methods=['GET', 'POST'])\ndef contact():\n    if request.method == 'POST':\n        name = request.form['name']\n        email = request.form['email']\n        message = request.form['message']\n        flash('Contact message submitted successfully!', 'success')\n        return redirect(url_for('thank_you'))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "contact",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def contact():\n    if request.method == 'POST':\n        name = request.form['name']\n        email = request.form['email']\n        message = request.form['message']\n        flash('Contact message submitted successfully!', 'success')\n        return redirect(url_for('thank_you'))\n    return render_template('contact.html')\n@app.route('/thank-you')\ndef thank_you():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "thank_you",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def thank_you():\n    return render_template('thank_you.html')\n@app.route('/admin')\ndef admin():\n    flash('Unauthorized! Please login first.', 'danger')\n    return redirect(url_for('login'))\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':\n        username = request.form['username']",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def admin():\n    flash('Unauthorized! Please login first.', 'danger')\n    return redirect(url_for('login'))\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':\n        username = request.form['username']\n        password = request.form['password']\n        if username == 'ratheesh' and password == '123':\n            session['logged_in'] = True",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def login():\n    if request.method == 'POST':\n        username = request.form['username']\n        password = request.form['password']\n        if username == 'ratheesh' and password == '123':\n            session['logged_in'] = True\n            flash('Login successful!', 'success')\n            return redirect(url_for('admin'))\n        else:\n            flash('Invalid username or password. Please try again.', 'danger')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def logout():\n    session.pop('logged_in', None)\n    flash('You have been logged out.', 'info')\n    return redirect(url_for('login'))\n@app.route('/resume')\ndef resume():\n    return render_template('resume.html')\n@app.route('/download_resume')\ndef download_resume():\n    resume_path = 'static/Ratheesh.R..pdf'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "resume",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def resume():\n    return render_template('resume.html')\n@app.route('/download_resume')\ndef download_resume():\n    resume_path = 'static/Ratheesh.R..pdf'\n    return send_file(resume_path, as_attachment=True)\n@app.route('/python_project')\ndef python_project():\n    return render_template('python_project.html')\n@app.route('/ml_project')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "download_resume",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def download_resume():\n    resume_path = 'static/Ratheesh.R..pdf'\n    return send_file(resume_path, as_attachment=True)\n@app.route('/python_project')\ndef python_project():\n    return render_template('python_project.html')\n@app.route('/ml_project')\ndef ml_project():\n    return render_template('ml_project.html')\n@app.route('/mini_project')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "python_project",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def python_project():\n    return render_template('python_project.html')\n@app.route('/ml_project')\ndef ml_project():\n    return render_template('ml_project.html')\n@app.route('/mini_project')\ndef mini_project():\n    return render_template('mini_project.html')\n@app.route('/web_project')\ndef web_project():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "ml_project",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def ml_project():\n    return render_template('ml_project.html')\n@app.route('/mini_project')\ndef mini_project():\n    return render_template('mini_project.html')\n@app.route('/web_project')\ndef web_project():\n    return render_template('web_project.html')\n@app.route('/chatbot')\ndef chatbox():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "mini_project",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def mini_project():\n    return render_template('mini_project.html')\n@app.route('/web_project')\ndef web_project():\n    return render_template('web_project.html')\n@app.route('/chatbot')\ndef chatbox():\n    return render_template('chat_box.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "web_project",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def web_project():\n    return render_template('web_project.html')\n@app.route('/chatbot')\ndef chatbox():\n    return render_template('chat_box.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "chatbox",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def chatbox():\n    return render_template('chat_box.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__, static_url_path='/static')\napp.secret_key = 'your_secret_key'\n# Routes\n@app.route('/')\ndef home():\n    return render_template('index.html')\n@app.route('/single')\ndef single():\n    return render_template('single-post.html')\n@app.route('/about-us')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.secret_key",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.secret_key = 'your_secret_key'\n# Routes\n@app.route('/')\ndef home():\n    return render_template('index.html')\n@app.route('/single')\ndef single():\n    return render_template('single-post.html')\n@app.route('/about-us')\ndef about():",
+        "detail": "app",
+        "documentation": {}
+    }
+]
