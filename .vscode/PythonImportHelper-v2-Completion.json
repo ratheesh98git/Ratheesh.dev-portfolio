@@ -104,7 +104,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def portfolio():\n    return render_template('portfolio.html')\n@app.route('/certificate')\ndef elements():\n    return render_template('elements.html')\n@app.route('/blog')\ndef blog():\n    return render_template('blog.html')\n@app.route('/test')\ndef test():",
+        "peekOfCode": "def portfolio():\n    return render_template('portfolio.html')\n@app.route('/certificate')\ndef elements():\n    return render_template('elements.html')\n@app.route('/blog')\ndef blog():\n    return render_template('blog.html')\n#https://website-port.onrender.com/\n@app.route('/test')",
         "detail": "app",
         "documentation": {}
     },
@@ -113,7 +113,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def elements():\n    return render_template('elements.html')\n@app.route('/blog')\ndef blog():\n    return render_template('blog.html')\n@app.route('/test')\ndef test():\n    return render_template('test.html')\n@app.route('/singledetails')\ndef single_blog():",
+        "peekOfCode": "def elements():\n    return render_template('elements.html')\n@app.route('/blog')\ndef blog():\n    return render_template('blog.html')\n#https://website-port.onrender.com/\n@app.route('/test')\ndef test():\n    return render_template('test.html')\n@app.route('/singledetails')",
         "detail": "app",
         "documentation": {}
     },
@@ -122,7 +122,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def blog():\n    return render_template('blog.html')\n@app.route('/test')\ndef test():\n    return render_template('test.html')\n@app.route('/singledetails')\ndef single_blog():\n    return render_template('single-blog.html')\n@app.route('/contact', methods=['GET', 'POST'])\ndef contact():",
+        "peekOfCode": "def blog():\n    return render_template('blog.html')\n#https://website-port.onrender.com/\n@app.route('/test')\ndef test():\n    return render_template('test.html')\n@app.route('/singledetails')\ndef single_blog():\n    return render_template('single-blog.html')\n@app.route('/contact', methods=['GET', 'POST'])",
         "detail": "app",
         "documentation": {}
     },
@@ -221,7 +221,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def ml_project():\n    return render_template('ml_project.html')\n@app.route('/mini_project')\ndef mini_project():\n    return render_template('mini_project.html')\n@app.route('/web_project')\ndef web_project():\n    return render_template('web_project.html')\n@app.route('/chatbot')\ndef chatbox():",
+        "peekOfCode": "def ml_project():\n    return render_template('ml_project.html')\n@app.route('/mini_project')\ndef mini_project():\n    return render_template('mini_project.html')\n@app.route('/web_project')\ndef web_project():\n    return render_template('web_project.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
         "detail": "app",
         "documentation": {}
     },
@@ -230,7 +230,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def mini_project():\n    return render_template('mini_project.html')\n@app.route('/web_project')\ndef web_project():\n    return render_template('web_project.html')\n@app.route('/chatbot')\ndef chatbox():\n    return render_template('chat_box.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "peekOfCode": "def mini_project():\n    return render_template('mini_project.html')\n@app.route('/web_project')\ndef web_project():\n    return render_template('web_project.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
         "detail": "app",
         "documentation": {}
     },
@@ -239,16 +239,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def web_project():\n    return render_template('web_project.html')\n@app.route('/chatbot')\ndef chatbox():\n    return render_template('chat_box.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "chatbox",
-        "kind": 2,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "def chatbox():\n    return render_template('chat_box.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "peekOfCode": "def web_project():\n    return render_template('web_project.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
         "detail": "app",
         "documentation": {}
     },

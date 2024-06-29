@@ -33,6 +33,8 @@ def elements():
 def blog():
     return render_template('blog.html')
 
+
+#https://website-port.onrender.com/
 @app.route('/test')
 def test():
     return render_template('test.html')
@@ -108,9 +110,7 @@ def mini_project():
 def web_project():
     return render_template('web_project.html')
 
-@app.route('/chatbot')
-def chatbox():
-    return render_template('chat_box.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
